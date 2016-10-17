@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream Vacation</title>
+<link rel="icon" type="image/png" href="EARTH.png" sizes="16x16"/>
+<link rel="stylesheet" type="text/css" href="style2.css"/>
+<style>
+img {
+width: 50%;
+height: 400px;
+}
+body {
+		background-color : #daad86;	 
+			}
+</style>
+</head>
+<body>
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+	   <label for="drawer-toggle" id="drawer-toggle-label"></label>
+	   <header style="bottom: 90%;"><font face="helvetica" color="#daad86"><b><center>LOCATION 2)<br> SEATTLE</center></font></b></h1></div></header>
+	   <nav id="drawer">
+	   		<ul id="navbar" class="bulletless">
+				<li class="navitem2"><a class="active" href="start.html">Introduction</a></li>
+				<li class="navitem3"><a href="MYMAP.html">Location 1: LOS ANGELES</a></li>
+				<li class="navitem1"><a href="Location2.html">Location 2: SEATTLE</a></li>
+				<li class="navitem4"><a href="Location3.html">Location 3: CHICAGO </a></li>
+				<li class="navitem5"><a href="Location4.html">Location 4: NEW YORK CITY </a></li>
+			</ul>
+		</nav>  
+</div>
+</nav> 
+<div id="hide">
+<div id="googleMap1" style="width:60%;height:300px;position:absolute;left:40%;top: 390px;"></div>
+<div id="googleMap3" style="width:30%;height:300px;position:absolute;left:40%;top: 90px;"></div>
+<div id="googleMap4" style="width:30%;height:300px;position:absolute;left:70%;top: 90px;"></div>
+</div>
+<script>
+function myMap() {
+  var mapOptions1 = new google.maps.LatLng(47.608013,-122.335167);
+    var mapProp = {
+  	center: mapOptions1,
+    zoom:5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+  var marker = new google.maps.Marker({
+  	position: mapOptions1
+  	});
+  var mapOptions3 = {
+    center: new google.maps.LatLng(47.608013,-122.335167),
+    zoom:9,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  };
+  var mapOptions4 = {
+    center: new google.maps.LatLng(47.608013,-122.335167),
+    zoom:9,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  }; 
+  var map1 = new google.maps.Map(document.getElementById("googleMap1"),mapProp);
+  	marker.setMap(map1);
+  var map3 = new google.maps.Map(document.getElementById("googleMap3"),mapOptions3);
+  var map4 = new google.maps.Map(document.getElementById("googleMap4"),mapOptions4);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCQpaTo7wDQBr3Ehtx_wNoNztvbc5wIZ4&callback=myMap"></script>
+<div id="h1" style="width:39%;position:absolute;left:1%;top:8%;">
+<h1>Seattle is a West Coast seaport city and the seat of King County, Washington.
+ With an estimated 684,451 residents as of 2015, Seattle is the largest city in both 
+ the state of Washington and the Pacific Northwest region of North America.
+  The Seattle metropolitan area is the 15th largest metropolitan area in
+the United States with over 3.7 million inhabitants. A major gateway 
+for trade with Asia, Seattle is the third largest port in North America in terms of 
+container handling as of 2015. Arthur A. Denny and his group of travelers,
+arrived from Illinois via Portland, Oregon, on the schooner Exact at Alki Point on
+November 13, 1851. The settlement was moved to the eastern shore of Elliott Bay 
+ and named "Seattle" in 1852, after Chief Si'ahl of the local Duwamish and Suquamish tribes.</h1> 
+</div> 
+</body>
+</html>
